@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/kataras/iris"
-	"github.com/tidwall/gjson"
 	"github.com/kataras/iris/websocket"
+	"github.com/tidwall/gjson"
 )
 
 func main() {
@@ -53,11 +53,8 @@ func handleConnection(c websocket.Connection) {
 	})
 
 	//断开连接
-	c.OnDisconnect(func(){
+	c.OnDisconnect(func() {
 
 	})
-
-
-
 
 }
